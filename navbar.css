@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*background colour for navbar*/
+.wrapper{
+    background-color: #f7f2f2;
+    width:100%;
+    height: 20%;
+}
+/* logo*/
+.navbar .logo{
+    width: 70px;
+    height: 70px;
+    background-color:transparent;
+    border: 3px solid green;
+    border-radius: 50%;
+    border-right-color: transparent;
+    position: relative;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+/*sodo elements to design logo*/
+.navbar .logo::before{
+    content: "Url Detection";
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-10%,-50%);
+    font-family: "Arizonia", cursive;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    height: 20%;
+    
+}
+/* to aline in straight line*/
+.navbar , .navlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10%;
+    
+}
+.navlist{
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+}
+.navlist li{
+    list-style: none;
+    padding: 0px 20px;
+}
+.navlist a{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+}
+/* sodo elements for designing navbar*/
+.navlist a::before{
+    content:"";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width:0;
+    height: 2px;
+    background-color: black;
+    transition: .5s ease-in-out;
+}
+.navlist a:hover::before{
+    width: 100%;
+}
+/* to make togal*/
+.hamburger span{
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  display: block;
+  margin: 5px;
+
+}
+/*cards alignmenet*/
+.content{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+   
+}
+.row-cols-1 {
+    margin-left: 350px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the minimum width and number of columns as needed */
+    gap: 20px; /* Adjust the gap between cards */
+    /* margin-top: 20px; */
+  }
+  
+  /* Styles for individual cards */
+  .card {
+    /* width: 125%; */
+    /* Add styles for each card */
+    border: 5px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 70px;
+  }
+ 
+  .card-img-top {
+    width: 100%;
+    height: 200px; /* Adjust the height of the card image as needed */
+    object-fit: cover ;  /*Ensure the image covers the entire space */
+  }
+  
+  .card-body {
+    padding: 15px;
+    background-color: rgba(202, 255, 217, 0.842);
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  body{
+    background-color:rgb(146, 219, 255);
+  }
+
+  /*footer*/
+.footer{
+  margin-top: 15px;
+}
+.foot-pannel1{
+  background:linear-gradient(90deg, #b7b78a 50%, #3c6255 50%);
+  color: white;
+  height: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+.foot-pannel2{
+  background-color: #202b2b;
+  color: rgb(251, 246, 246);
+  height: 200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+ul{
+  margin-top: 20px;
+}
+ul a{
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 10px;
+  color: #f5f0f0;
+}
+.foot-pannel3{
+  background-color:#202b2b ;
+  color: white;
+  border-top: 0.5px solid transparent;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot-pannel4{
+  background-color: #0f1111;
+  color: white;
+  height: 80px;
+  font-size: 0.9rem;
+  text-align: center;
+  
+}
+.pages{
+  padding-top: 25px;
+
+}
+.copy-write{
+  text-align: center;
+
+}
+
+

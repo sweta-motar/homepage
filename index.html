@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="loginContainer" class="login-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+            <p id="errorMessage" class="error-message"></p>
+            
+            <p><a href="#" id="signInLink">Sign In</a></p>
+            <p><a href="#" id="forgotPasswordLink">Forgot Password?</a></p>
+        </div>
+
+        <div id="signInContainer" class="login-container hidden">
+            <h2>Sign In</h2>
+            <form id="signInForm">
+                <div class="input-group">
+                    <label for="newUsername">New Username:</label>
+                    <input type="text" id="newUsername" name="newUsername" required>
+                </div>
+                <div class="input-group">
+                    <label for="newPassword">New Password:</label>
+                    <input type="password" id="newPassword" name="newPassword" required>
+                </div>
+                <button type="submit">Sign In</button>
+            </form>
+            <p><a href="#" id="backToLoginFromSignIn">Back to Login</a></p>
+        </div>
+
+        <div id="forgotPasswordContainer" class="login-container hidden">
+            <h2>Reset Password</h2>
+            <form id="forgotPasswordForm">
+                <div class="input-group">
+                    <label for="resetPassword">New Password:</label>
+                    <input type="password" id="resetPassword" name="resetPassword" required>
+                </div>
+                <button type="submit">Reset Password</button>
+            </form>
+            <p><a href="#" id="backToLoginFromForgot">Back to Login</a></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
